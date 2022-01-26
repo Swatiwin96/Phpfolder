@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+    </head>
+    <body>
+      <div class="backImg">
+      <img src="batman.gif">
+      </div>
+      <div>
+        <p>BOX SIZING IS IMPORTANT</p>
+      </div>
+      <style>
+
+      div{
+        width:300px;
+        height:100px;
+        background: black;
+        background-position: center center;
+
+      }
+      p:hover{
+        color:white;
+        /* transform: translatey(50px); */
+        /* transform:translateY(30px); */
+        transform:scale(2,2);
+
+      }
+        .backImg{
+      /*-    height:100px;
+          width:100px;*/
+          height:500px;
+          width:100%;
+        /*  background-color: red;*/
+           /* background-image:url(rose.jpg); */
+           /* background-repeat:repeat-x; */
+           /* background-repeat:repeat; */
+           /* background-size:100% 100%; */
+            background-image:linear-gradient( to left,red,yellow);
+           /* background-color:red; */
+           position:relative;
+
+        }
+        .backImg img{
+          width:140px;
+          height:140px;
+          position:absolute;
+          left:0;
+          animation-name: batsmanbhag;
+          animation-duration:4s;
+        }
+          animation-timing-function:linear;
+          @@keyframes batsmanbhag{
+            from {left:0}
+            to{left:85%}
+
+
+        }
+        *{
+          margin:0;
+
+        }
+        </style>
+        </body>
+        </html>
